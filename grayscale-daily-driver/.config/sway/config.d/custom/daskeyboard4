@@ -1,0 +1,14 @@
+# SwayWM input configuration for the DasKeyboard 4 Ultimate.
+# Author: Oscar Carballal Prego <oscar.carballal@protonmail.com>
+
+# Play-Pause, Next and Previous buttons
+bindcode 171 exec playerctl next
+bindcode 172 exec playerctl play-pause
+bindcode 173 exec playerctl previous
+
+# Mute, Decrease Volume, Increase Volume
+bindcode 121 exec pactl set-sink-mute `pactl list sinks short | grep RUNNING | awk '{print $1}' | head -n 1` toggle
+bindcode 122 exec pactl set-sink-volume `pactl list sinks short | grep RUNNING | awk '{print $1}'| head -n 1` -2%
+bindcode 123 exec pactl set-sink-volume `pactl list sinks short | grep RUNNING | awk '{print $1}'| head -n 1` +2%
+
+# The suspend key should work correctly with no need to bind it.

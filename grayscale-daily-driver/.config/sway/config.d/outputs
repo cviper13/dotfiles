@@ -1,0 +1,14 @@
+# SwayWM outputs configuration. For detailed information type "man sway"
+# For a list of devices run: swaymsg -t get_outputs
+# Author: Oscar Carballal Prego <oscar.carballal@protonmail.com>
+
+# Default wallpaper
+output * bg $wallpaper fill
+
+# Devices
+set $display_laptop eDP-1
+set $display_external DP-1
+
+# Disable main laptop screen
+bindsym $mod+F7 output $display_laptop disable
+bindsym $mod+F8 output $display_laptop enable

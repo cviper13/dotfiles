@@ -1,0 +1,37 @@
+font_family Terminus (TTF)
+font_size 9
+scrollback_lines 10000
+url_prefixes http https file ftp
+strip_trailing_spaces always
+focus_follows_mouse yes
+enable_audio_bell no
+window_alert_on_bell no
+bell_on_tab no
+hide_window_decorations yes
+tab_bar_edge bottom
+tab_bar_style powerline
+background_opacity 0.7
+dim_opacity 0.75
+allow_remote_control no
+linux_display_server wayland
+enabled_layouts splits:split_axis=horizontal
+# active_border_color #f99c55
+
+map ctrl+F5 launch --location=hsplit
+map ctrl+F6 launch --location=vsplit
+map ctrl+F7 layout_action rotate
+map shift+up move_window up
+map shift+left move_window left
+map shift+right move_window right
+map shift+down move_window down
+map ctrl+left neighboring_window left
+map ctrl+right neighboring_window right
+map ctrl+up neighboring_window up
+map ctrl+down neighboring_window down
+
+
+
+# BEGIN_KITTY_THEME
+# Space Gray Eighties
+include current-theme.conf
+# END_KITTY_THEME

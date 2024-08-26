@@ -1,0 +1,22 @@
+# SwayWM multimedia keys configuration. For detailed information type "man sway"
+# Author: Oscar Carballal Prego <oscar.carballal@protonmail.com>
+
+# Audio
+bindsym $mod+F1 exec pactl set-sink-mute `pactl list sinks short | grep RUNNING | awk '{print $1}'` toggle
+bindsym $mod+F2 exec pactl set-sink-volume `pactl list sinks short | grep RUNNING | awk '{print $1}'` -2%
+bindsym $mod+F3 exec pactl set-sink-volume `pactl list sinks short | grep RUNNING | awk '{print $1}'` +2%
+
+# Media
+bindsym $mod+F4 exec playerctl previous
+bindsym $mod+F5 exec playerctl play-pause
+bindsym $mod+F6 exec playerctl next
+
+# Backlight
+# PLEASE NOTE: Light has a small issue with SUID, you should install the version
+# that allows the user to run it without SUID
+bindsym $mod+F9 exec light -U 5
+bindsym $mod+F10 exec light -A 5
+
+# Screenshot
+bindsym $mod+S exec grimshot save screen ~/Pictures/$(date '+%Y-%m-%d-%T')-screenshot.png
+bindsym $mod+Shift+S exec grimshot save area ~/Pictures/$(date '+%Y-%m-%d-%T')-screenshot.png

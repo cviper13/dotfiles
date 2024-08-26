@@ -1,0 +1,65 @@
+/* Keyframes for fade-in effect */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Styles for the main window */
+window {
+    animation-name: fadeInLeft;
+    animation-duration: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+    background-color: #1a1a1a; /* Very dark gray background color */
+    font-family: "Terminus (TTF)", monospace; /* Added monospace fallback */
+}
+
+/* Styles for the input element */
+#input {
+    margin: 5px;
+    border: none;
+    background-color: #333333; /* Dark gray background */
+    color: #e0e0e0; /* Light gray text color for contrast */
+}
+
+/* Styles for inner box */
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: #1a1a1a; /* Very dark gray background matching window */
+}
+
+/* Styles for outer box */
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: #1a1a1a; /* Very dark gray background matching window */
+}
+
+/* Styles for scroll area */
+#scroll {
+    margin: 0;
+    border: none;
+}
+
+/* Styles for text elements */
+#text {
+    margin: 5px;
+    border: none;
+    color: #e0e0e0; /* Light gray text color for contrast */
+}
+
+/* Styles for selected entry */
+#entry:selected {
+    background-color: #333333; /* Dark gray background for selected entry */
+    color: #ffffff; /* White text color for selected entry */
+}

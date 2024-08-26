@@ -1,0 +1,70 @@
+# SwayWM global configuration. For detailed information type "man sway"
+# Author: Oscar Carballal Prego <oscar.carballal@protonmail.com>
+
+###############################################################################
+# TODO:
+#   + Sway:
+#      - Autoassign workspaces to certain applications
+#
+###############################################################################
+
+#########################
+# Run services
+#########################
+exec mako
+exec waybar
+exec autotiling
+
+#########################
+# Main definitions
+#########################
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+
+# Your preferred terminal emulator
+set $term kitty
+
+# Your preferred application launcher
+set $menu wofi --show run -Iib -l 5 -W 500 -x -40 -y -40
+#set $menu rofi -terminal kitty -show run -theme ~/.config/sway/rofi/flat-gray.rasi
+# Default wallpaper
+set $wallpaper ~/.config/sway/images/wallpaper.jpg
+
+# Default lockscreen background
+set $lockscreenbg ~/.config/sway/images/lockscreen_background.jpg
+
+# Remove all borders from applications
+default_border none
+
+# Stablish gaps between windows and from the screen edge
+gaps inner 15
+gaps outer 15
+
+#########################
+# Main keybindings
+#########################
+# Start a terminal
+bindsym $mod+Return exec $term
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Start your launcher
+bindsym $mod+x exec $menu
+
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button + $mod.
+# Despite the name, also works for non-floating windows.
+# Change normal to inverse to use left mouse button for resizing and right
+# mouse button for dragging.
+floating_modifier $mod normal
+
+# Reload the configuration file. Be aware that some changes might need
+# a session logout (gaps, for example)
+bindsym $mod+Shift+c reload
+
+# Exit sway (logs you out of your Wayland session)
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -b 'Yes, exit sway' 'swaymsg exit'
+
+include ~/.config/sway/config.d/*
+include ~/.config/sway/config.d/custom/*

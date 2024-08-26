@@ -1,0 +1,6 @@
+# SwayWM input configuration for the Logitech MX Master 3.
+# Author: Oscar Carballal Prego <oscar.carballal@protonmail.com>
+
+# Remember, --whole-window is required to work
+bindcode --whole-window 275 workspace prev_on_output
+bindcode --whole-window 276 workspace next_on_output

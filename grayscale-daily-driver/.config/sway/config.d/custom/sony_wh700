@@ -1,0 +1,8 @@
+# SwayWM input configuration for the Sony WH700 Headset.
+# Author: Oscar Carballal Prego <oscar.carballal@protonmail.com>
+
+# Please note that these are standard XF86Audio controls
+# they should work by default but for some reason I had to
+# rebind them.
+bindcode 208 exec playerctl play
+bindcode 209 exec playerctl pause
