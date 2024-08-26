@@ -13,6 +13,7 @@
 * wofi
 * kitty
 * fastfetch
+* otf-font-awesome
 
 ## configuration :3
 
