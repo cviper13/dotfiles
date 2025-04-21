@@ -1,0 +1,17 @@
+[global]
+frame_color = "#aaaaaa"        # Matches @base05
+separator_color = frame
+highlight = "#cccccc"          # Matches @base06
+
+[urgency_low]
+background = "#111111"         # Matches @base01
+foreground = "#aaaaaa"         # Matches @base05
+
+[urgency_normal]
+background = "#111111"
+foreground = "#aaaaaa"
+
+[urgency_critical]
+background = "#111111"
+foreground = "#cccccc"         # Slightly brighter for critical
+frame_color = "#888888"        # Neutral gray for critical border
