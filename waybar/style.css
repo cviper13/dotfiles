@@ -1,0 +1,104 @@
+@define-color base00 #000000;
+@define-color base01 #111111;
+@define-color base02 #222222;
+@define-color base03 #333333;
+@define-color base04 #888888;
+@define-color base05 #aaaaaa;
+@define-color base06 #cccccc;
+@define-color base07 #ffffff;
+@define-color base08 #888888;
+@define-color base09 #888888;
+@define-color base0A #888888;
+@define-color base0B #888888;
+@define-color base0C #888888;
+@define-color base0D #888888;
+@define-color base0E #888888;
+@define-color base0F #888888;
+
+* {
+  transition: none;
+  box-shadow: none;
+}
+
+#waybar {
+  font-family: 'IBM Plex Mono Nerd Font', monospace;
+  font-size: 0.99em;
+  font-weight: 400;
+  color: @base04;
+  background: @base00;
+}
+
+#workspaces {
+  margin: 0 4px;
+}
+
+#workspaces button {
+  margin: 4px 0;
+  padding: 0 4px;
+  color: @base05;
+}
+
+#workspaces button.visible {
+}
+
+#workspaces button.active {
+  border-radius: 4px;
+  background-color: @base01;
+}
+
+#workspaces button.urgent {
+  color: #ffffff;
+}
+
+#tray {
+  margin: 4px 4px 4px 4px;
+  border-radius: 4px;
+  background-color: @base01;
+}
+
+#tray * {
+  padding: 0 6px;
+  border-left: 1px solid @base00;
+}
+
+#tray *:first-child {
+  border-left: none;
+}
+
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #clock, #temperature, #language {
+  margin: 4px 2px;
+  padding: 0 6px;
+  background-color: @base01;
+  border-radius: 4px;
+  min-width: 20px;
+}
+
+#pulseaudio.muted {
+  color: @base03;
+}
+
+#pulseaudio.bluetooth {
+  color: @base05;
+}
+
+#clock {
+  margin-left: 0px;
+  margin-right: 4px;
+  background-color: transparent;
+}
+
+#temperature.critical {
+  color: @base03;
+}
+
+#window {
+  font-size: 0.9em;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+#language {
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
