@@ -1,0 +1,98 @@
+# =============================================================================
+# Dotfiles .gitignore
+# =============================================================================
+
+# Plasma/KDE (using Hyprland instead)
+autostart/
+baloofileinformationrc
+baloofilerc
+kactivitymanagerdrc
+kconf_updaterc
+kded5rc
+kdedefaults/
+kdeglobals
+kde.org/
+kglobalshortcutsrc
+ksmserverrc
+ktimezonedrc
+Kvantum/
+kwinoutputconfig.json
+kwinrc
+plasma*
+powermanagementprofilesrc
+QtProject.conf
+Trolltech.conf
+
+# System/Session files
+dconf/
+session/
+pulse/
+systemd/
+glib-2.0/
+procps/
+
+# File managers
+dolphinrc
+Thunar/
+xfce4/
+
+# Browsers & Web Apps
+google-chrome/
+Microsoft/
+Microsoft Teams - Preview/
+Element/
+
+# IDEs & Editors (keep personal configs, ignore workspaces)
+Code/
+GIMP/
+
+# Communication & Media
+teams-for-linux/
+vesktop/
+Soundux/
+
+# Utilities & Tools
+copyq/
+obs-studio/
+OpenRGB/
+Mullvad VPN/
+remmina/
+freerdp/
+tigervnc/
+wireshark/
+qt5ct/
+pavucontrol.ini
+
+# Games & Gaming Tools
+csgo-mm-server-picker/
+bruno/
+jnbot/
+
+# Temporary & Cache files
+*.tmp
+*.cache
+*.log
+*.lock
+user-dirs.dirs
+user-dirs.locale
+mimeapps.list
+trashrc
+
+# =============================================================================
+# Keep these (commonly shared configs):
+# dunst/ or mako/ - Notifications
+# rofi/ - Application launcher
+# fish/ - Shell config
+# helix/ - Editor config
+# fontconfig/ - Font settings
+# gtk-3.0/, gtkrc* - GTK theming
+# wal/ - Color schemes
+# neofetch/ - System info
+# htop/ - Process monitor
+# mpv/ - Media player
+# gh/ - GitHub CLI
+# scripts/ - Custom scripts
+# waybar/ - Status bar
+# ghostty/ - Terminal emulator
+# libreoffice/ - Office suite config
+# =============================================================================

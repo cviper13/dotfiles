@@ -42,5 +42,5 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = iTerm2 Default
+theme = /home/cviper13/.cache/wal/ghostty.conf
 font-family = IBM Plex Mono

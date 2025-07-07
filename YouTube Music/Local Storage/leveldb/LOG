@@ -1,0 +1,6 @@
+2025/06/30-21:28:16.100 2716 Reusing MANIFEST /home/cviper13/.config/YouTube Music/Local Storage/leveldb/MANIFEST-000001
+2025/06/30-21:28:16.112 2716 Recovering log #33
+2025/06/30-21:28:16.113 2716 Reusing old log /home/cviper13/.config/YouTube Music/Local Storage/leveldb/000033.log 
+2025/06/30-21:38:26.726 2717 Level-0 table #37: started
+2025/06/30-21:38:26.728 2717 Level-0 table #37: 14646 bytes OK
+2025/06/30-21:38:26.729 2717 Delete type=0 #33

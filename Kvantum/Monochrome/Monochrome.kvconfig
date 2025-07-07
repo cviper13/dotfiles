@@ -75,17 +75,17 @@ light.color=#464648
 mid.light.color=#323234
 dark.color=#141416
 mid.color=#38383a
-highlight.color=#727274
-inactive.highlight.color=#5a5a5c
-text.color=#aaaaac
-window.text.color=#aaaaac
-button.text.color=#aaaaac
-disabled.text.color=#aaaaac78
-tooltip.text.color=#aaaaac
-highlight.text.color=#dadadc
+highlight.color=#aaaaaa
+inactive.highlight.color=#dddddd
+text.color=#ffffff
+window.text.color=#ffffff
+button.text.color=#ffffff
+disabled.text.color=#ffffff78
+tooltip.text.color=#ffffff
+highlight.text.color=#ffffff
 link.color=#646464
 link.visited.color=#7f8c8d
-progress.indicator.text.color=#aaaaac
+progress.indicator.text.color=#ffffff
 
 [Hacks]
 transparent_ktitle_label=true

@@ -1,0 +1,12 @@
+2025/06/29-20:31:23.433 429 Reusing MANIFEST /home/cviper13/.config/YouTube Music/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/06/29-20:31:23.433 429 Recovering log #47
+2025/06/29-20:31:23.435 429 Reusing old log /home/cviper13/.config/YouTube Music/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/000047.log 
+2025/06/29-22:05:24.204 41c Level-0 table #52: started
+2025/06/29-22:05:24.215 41c Level-0 table #52: 1116547 bytes OK
+2025/06/29-22:05:24.217 41c Delete type=0 #47
+2025/06/29-22:17:52.458 41c Compacting 1@1 + 1@2 files
+2025/06/29-22:17:52.461 41c Generated table #53@1: 1037 keys, 40420 bytes
+2025/06/29-22:17:52.461 41c Compacted 1@1 + 1@2 files => 40420 bytes
+2025/06/29-22:17:52.462 41c compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/06/29-22:17:52.462 41c Delete type=2 #49
+2025/06/29-22:17:52.462 41c Delete type=2 #52
