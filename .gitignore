@@ -30,11 +30,21 @@ pulse/
 systemd/
 glib-2.0/
 procps/
+menus/
+GIMP/
+fontconfig/fonts.conf
+gtk-2.0/
+gtk-4.0/
+ibus/
 
-# File managers
+# File managers & Desktop
 dolphinrc
 Thunar/
 xfce4/
+user-dirs.dirs
+user-dirs.locale
+mimeapps.list
+trashrc
 
 # Browsers & Web Apps
 google-chrome/
@@ -44,7 +54,11 @@ Element/
 
 # IDEs & Editors (keep personal configs, ignore workspaces)
 Code/
-GIMP/
+libreoffice/
+*.tmp
+*.cache
+*.log
+*.lock
 
 # Communication & Media
 teams-for-linux/
@@ -52,6 +66,8 @@ vesktop/
 Soundux/
 
 # Utilities & Tools
+Postman/
+YouTube Music/
 copyq/
 obs-studio/
 OpenRGB/
@@ -62,29 +78,20 @@ tigervnc/
 wireshark/
 qt5ct/
 pavucontrol.ini
+gh/
 
 # Games & Gaming Tools
 csgo-mm-server-picker/
 bruno/
 jnbot/
 
-# Temporary & Cache files
-*.tmp
-*.cache
-*.log
-*.lock
-user-dirs.dirs
-user-dirs.locale
-mimeapps.list
-trashrc
-
 # =============================================================================
 # Keep these (commonly shared configs):
-# dunst/ or mako/ - Notifications
+# dunst/ - Notifications  
 # rofi/ - Application launcher
 # fish/ - Shell config
 # helix/ - Editor config
-# fontconfig/ - Font settings
+# fontconfig/ (except fonts.conf) - Font settings
 # gtk-3.0/, gtkrc* - GTK theming
 # wal/ - Color schemes
 # neofetch/ - System info
@@ -94,5 +101,4 @@ trashrc
 # scripts/ - Custom scripts
 # waybar/ - Status bar
 # ghostty/ - Terminal emulator
-# libreoffice/ - Office suite config
 # =============================================================================
