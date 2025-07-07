@@ -1,0 +1,5 @@
+configuration {
+	font: "BlexMono Nerd Font 12";
+}
+
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
